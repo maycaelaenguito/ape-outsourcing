@@ -96,38 +96,36 @@ i.fas{
 .open-menu .line2{
     transform: translate(-50%, -50%) rotate(45deg);
 }
-/* 
-@media screen and (min-width: 375px) and (max-width: 430px){
-    .icon span{
-        width: 30px;
-        margin: 15px;
-        right: -2vw;
-    }
-    .icon .line1{
-        width: 15px;
-        transform: translate(-30px, 15px);
-    }
-    .icon .line3{
-        width: 15px;
-        transform: translate(-15px, -15px);
-    } */
-    /* OPEN MENU */
-    /* .open-menu .line1{
-        transform: translate(-27px, 5px) rotate(-45deg);
-    }
-    .open-menu .line3{
-        transform: translate(-17px, -6px) rotate(-45deg);
-    }
-    .open-menu .line2{
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-} */
-@media screen and (min-width: 768px) and (max-width: 1920px){
+
+@media (min-width: 768px) {
     .icon{
         display: none;
     }
     ul{
-        left: 50%;
+        left: 0;
+        background-color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    .icon{
+        display: none;
+    }
+    
+    ul{
+        position: absolute;
+        left: 0;
+        background: aqua;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        transition:none;
+    }
+
+    ul a {
+        font-size: 24px;
+        justify-content: flex-end;
     }
 }
 
