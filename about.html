@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Main CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="about.css">
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Boostrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- Font Awseome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap Icons Link -->
@@ -21,19 +23,18 @@
 </head>
 <body>
     <!-- NAVIGATION BAR -->
-
     <header class="about">
         <nav>
             <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
               <ul>
-                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Career</a></li>
+                <li><a href="#">Careers</a></li>
                 <li><a href="#">Technologies</a></li>
                 <li><a href="#">Contact Us</a></li>
               </ul>
-              <div class="toggle_btn" id="icon" onclick="navigation()">
-                <div class="icons">
+              <div class="toggle_btn active" id="icon" onclick="navigation()">
+                <div class="icons toggle">
                   <span class="line-1" style="background: #fff;"></span>
                   <span class="line-2" style="background: #fff;"></span>
                   <span class="line-3" style="background: #fff;"></span>
@@ -41,52 +42,131 @@
               </div>
                 <div class="menu">
                   <div class="dropdown_menu" id="navbar">
-                    <li><a href="#" class="active">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Technologies</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Careers</a></li>
+                    <li><a href="#" class="nav-link">Technologies</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                    <div class="social-icons">
+                      <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                      <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                      <li><a class="github" href="https://github.com/maycaelaenguito/ape.technology"><i class="bi bi-github"></i></a></li>
+                      <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+                      <li><a class="instagram" href="#"><i class="bi bi-instagram"></i></a></li>  
+                    </div>
                   </div>
                 </div>
         </nav>
-        <h1>About Us</h1>
-    </header>
+        <div class="text">
+          <h1>About Us</h1>
+        </div>
+        </header>
 
-        <!-- <div class="about-ape">
-            <p>About APE Technology</p>
-        </div> -->
+        <div class="about-ape">
+          <h3>About APE Technology</h3>
+          <p>
+            Welcome to APE Technology, a premier web development outsourcing company founded in 2023 by a team of three highly skilled web developers in the Philippines. At APE Technology, we believe that great ideas deserve to be brought to life with the help of cutting-edge technology and creative solutions. <br><br>
 
-    <!-- Footer -->
-        <footer>
-          <div class="footer-container">
-            <div class="branches">
-              <h4>Our Branches</h4>
-              <ul>
-                <li><i class="bi bi-geo-alt-fill p-2"></i>Tacloban City</li>
-                <li><i class="bi bi-geo-alt-fill p-2"></i>Caloocan City</li>
-                <li><i class="bi bi-geo-alt-fill p-2"></i>Quezon City</li>
-              </ul>
+            Our team of experts brings together a wealth of knowledge and experience in web development, software engineering, and project management to deliver custom-made solutions tailored to your unique needs. Whether you need a responsive website, a complex web application, or an e-commerce platform, we are here to help you achieve your goals and take your business to the next level. <br><br>
+
+            Our mission is to empower businesses of all sizes to leverage the power of the internet to reach new heights of success. With a strong commitment to quality and customer satisfaction, we work closely with our clients to understand their vision and deliver solutions that exceed their expectations. <br><br>
+
+             At APE Technology, we are passionate about technology and the endless possibilities it offers. We are committed to staying at the forefront of the latest developments in web development to ensure that our clients receive the best possible service. So why not join us on this exciting journey and see what we can achieve together? Contact us today to learn more about how we can help your business thrive in the digital world.
+          </p>
+          <h3>Our Story</h3>
+          <p>
+            Our story began in the Philippines with three aspiring web developers: Reynald Arro, John Lester Pastrana, and Maycaela Enguito. We all shared a common passion for web development and a desire to make a difference in the industry. Our journey began when we enrolled in Kodego, a web learning company for full stack web development, where we honed our skills and gained valuable experience in building real-world web applications. <br> <br>
+
+            Through our hard work and dedication, we quickly rose to become top-performing students in Kodego. We were driven to pursue our dreams of creating innovative web solutions that would help businesses thrive in the digital age. With a shared vision and a commitment to excellence, we decided to join forces and establish APE Technology, a web development outsourcing company that provides custom-made solutions to clients around the world. Today, we are proud to say that our passion for technology and our commitment to delivering high-quality services have helped us build a strong reputation in the industry.
+          </p>
+        </div>
+        <div class="mission-vision">
+          <div class="mission">
+            <h3>Mission</h3>
+            <p>Our mission at Ape Outsourcing Services is to provide cost-effective and customized outsourcing solutions that help businesses increase their efficiency, productivity, and profitability. We are committed to delivering high-quality services and exceeding our clients' expectations by utilizing the latest technology and best practices, hiring and retaining the most talented professionals, and fostering a culture of excellence and continuous improvement. We believe in building long-term partnerships with our clients based on trust, transparency, and mutual respect.</p>
+          </div>
+          <div class="vison">
+            <h3>Vision</h3>
+            <p>At APE Outsourcing Services, our vision is to be the leading provider of reliable and innovative outsourcing solutions for businesses of all sizes across various industries. We strive to be recognized for our exceptional quality of service, professionalism, and integrity, and to help our clients achieve their goals through our expertise and dedication.</p>
+          </div>
+        </div>
+
+        <div class="team">
+          <h1>Meet The Team</h1>
+          <div class="reynald">
+            <img src="images/Fotor_AI.png" alt="ape team" class="rounded-circle">
+            <h3 class="text-center">Reynald Arro</h3>
+            <p class="text-center">Software Development Manager</p>
+          </div>
+          <div class="lester">
+            <img src="images/Fotor_AI (2).png" alt="ape team" class="rounded-circle">
+            <h3 class="text-center">John Lester Pastrana</h3>
+            <p class="text-center">Full Stack Web Developer</p>
+          </div>
+          <div class="maycaela">
+            <img src="images/Fotor_AI (1).png" alt="ape team" class="rounded-circle">
+            <h3 class="text-center">Reynald Arro</h3>
+            <p class="text-center">Full Stack Web Developer</p>
+          </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+          <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h6>About</h6>
+                  <p class="text-justify">APE Technology is a software development outsourcing company that provides custom software development, mobile app development, web development, and QA/testing services. We use modern technologies and agile methodologies to deliver high-quality software on time and within budget, catering to various industries such as healthcare, finance, and e-commerce.</p>
+                </div>
+      
+                <div class="col-xs-6 col-md-3">
+                  <h6>Our Branches</h6>
+                  <ul class="footer-links">
+                    <li><a href="https://goo.gl/maps/ckf1ohCPN2wW47Fc7">Metro Manila</a></li>
+                    <li><a href="https://goo.gl/maps/VMfPSmZ97CMNobKUA">Cebu City</a></li>
+                    <li><a href="https://goo.gl/maps/mjpXG22jPCY9k3Nr9">Baybay City</a></li>
+                    <li><a href="https://goo.gl/maps/y9zREjYSv48qH7568">Baguio City</a></li>
+                    <li><a href="https://goo.gl/maps/dLV9TBf6StFikuxe7">Davao City</a></li>
+                  </ul>
+                </div>
+      
+                <div class="col-xs-6 col-md-3">
+                  <h6>Quick Links</h6>
+                  <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="technologies.html">Technologies</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
             </div>
-            <div class="contact">
-              <h4>Contact Us</h4>
-              <p><i class="bi bi-envelope p-2"></i><span>info@ape-outsourcing.com</span> <br><i class="bi bi-telephone p-2"></i><span>+1 (512) 333 - 2187</span></p>
-            </div>
-            <div class="follow">
-              <h4>Follow Us</h4>
-              <div class="social-icons">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-sm-5 col-xs-12">
+                  <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+               <a href="index.html">APE Technology</a>.
+                  </p>
+                </div>
+      
+                <div class="col-md-6 col-sm-7 col-xs-12">
+                  <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a class="github" href="https://github.com/maycaelaenguito/ape.technology"><i class="bi bi-github"></i></a></li>
+                    <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+                    <li><a class="instagram" href="#"><i class="bi bi-instagram"></i></a></li>  
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="legal">
-            <p>© APE Technology 2023. All Rights Reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
-          </div>
-        </footer>
-        
-<script src="main.js"></script>
+      </footer>  
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
