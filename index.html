@@ -4,46 +4,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Montserrat:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Boostrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>APE Outsourcing</title>
+    <!-- Font Awseome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
 </head>
 <body>
-    
-    <nav>
-        <ul id="navbar">
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Technologies</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-        <ul id="">
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Technologies</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </nav>
+    <!-- NAVIGATION BAR -->
+    <header class="home">
+        <nav>
+            <a href="index.html"><img src="images/logo-black.png" class="logo"></a>
+              <ul>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+              <div class="toggle_btn" id="icon" onclick="navigation()">
+                <div class="icons">
+                  <span class="line-1" style="background: #000;"></span>
+                  <span class="line-2" style="background: #000;"></span>
+                  <span class="line-3" style="background: #000;"></span>
+                </div>
+              </div>
+                <div class="menu">
+                  <div class="dropdown_menu" id="navbar">
+                    <li><a href="#" class="active">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </div>
+                </div>
+        </nav>
+          <div class="text p-lg-3 p-3">
+            <h1>Empowering <br> businesses with <br> innovative solutions.</h1>
+            <a href="#"><p>Learn how we can help you. <span><i class="bi bi-arrow-right"></i></span></p></a>
+          </div>
+        </header>
+        <section>
+          <div class="sec2" >
+            <img src="images/Your paragraph text (3).png" alt="about company image">
+          </div>
+          <div class="text">
+            <p>
+              APE Technology offers professional outsourcing services for web and mobile development. Our experienced developers build custom solutions to meet our clients' unique needs. We work closely with our clients to exceed their expectations and deliver cost-effective, reliable services.
+            </p>
+          </div>
+          
+        </section>
 
-    <div class="close-menu icon" id="icon" onclick="navigation()">
-        <div class="icon-container">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
+        <div class="services">
+          <h1>Our Services</h1>
+          <button type="button"><a href="#">Front-End Development</a></button>
+          <button type="button"><a href="#">Back-End Development</a></button>
+          <button type="button"><a href="#">Full-Stack Web Development</a></button>
+          <button type="button"><a href="#">UX/UI Design</a></button>
+          <button type="button"><a href="#">Mobile App Development</a></button>
         </div>
-    </div>
-    
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- Partners -->
+        <div class="partners">
+          <h1>Our Clients</h1>
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/company1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company6.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company7.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/company8.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon rounded-1" aria-hidden="true" style="background-color: #2B7A78;"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon rounded-1" aria-hidden="true" style="background-color: #2B7A78;"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>       
+        </div>
+        <!-- Reviews -->
+        <div class="reviews">
+          <h1>Our Client Reviews</h1>
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="slider-card">
+                <div class="slider-card-content">
+                  <h3>Sarah Johnson</h3>
+                  <h6>Acme Corporation</h6>
+                  <div class="ratings">
+                    <i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i>
+                  </div>
+                  <p><i class="bi bi-quote"></i>APE Technology exceeded our expectations in software development quality.</p>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="slider-card-content">
+                  <h3>David Lee</h3>
+                  <h6>Alpha Industries</h6>
+                  <div class="ratings">
+                    <i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i>
+                  </div>
+                  <p><i class="bi bi-quote"></i>I highly recommend APE Technology for their exceptional technical expertise.</p>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="slider-card-content">
+                  <h3>Emily Chen</h3>
+                  <h6>Bright Idea Solutions</h6>
+                  <div class="ratings">
+                    <i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i>
+                  </div>
+                  <p><i class="bi bi-quote"></i>APE Technology's team is professional, talented, and easy to work with.</p>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="slider-card-content">
+                  <h3>Michael Wong</h3>
+                  <h6>Cyberdyne Systems</h6>
+                  <div class="ratings">
+                    <i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i>
+                  </div>
+                  <p><i class="bi bi-quote"></i>The project was completed efficiently thanks to APE Technology's team.</p>
+                </div>
+              </div>
+              <div class="slider-card">
+                <div class="slider-card-content">
+                  <h3>Rachel Kim</h3>
+                  <h6>Elite Enterprises</h6>
+                  <div class="ratings">
+                    <i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i><i class="bi bi-star-fill p-1"></i>
+                  </div>
+                  <p><i class="bi bi-quote"></i>APE Technology provided customized solutions tailored to our business needs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls pb-2">
+              <button class="slider-control prev"><i class="bi bi-chevron-left"></i></button>
+              <button class="slider-control next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+        
+        <footer>
+          <div class="footer-container">
+            <div class="branches">
+              <h4>Our Branches</h4>
+              <ul>
+                <li><i class="bi bi-geo-alt-fill p-2"></i>Tacloban City</li>
+                <li><i class="bi bi-geo-alt-fill p-2"></i>Caloocan City</li>
+                <li><i class="bi bi-geo-alt-fill p-2"></i>Quezon City</li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h4>Contact Us</h4>
+              <p><i class="bi bi-envelope p-2"></i><span>info@ape-outsourcing.com</span> <br><i class="bi bi-telephone p-2"></i><span>+1 (512) 333 - 2187</span></p>
+            </div>
+            <div class="follow">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="legal">
+            <p>© APE Technology 2023. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
+          </div>
+        </footer>
+        
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+
+  
+    </script>
 </body>
 </html>

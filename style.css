@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-ul{
+.navbar-open ul{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(
@@ -19,15 +19,15 @@ ul{
     transition:left 1s;
     overflow: hidden;
 }
-li{
+nav .navbar-menu li{
     display: block;
     width: 100%;
     text-align: center;
 }
-li:not(:last-child){
+.navbar-menu li:not(:last-child){
     margin-bottom: 40px;
 }
-ul a{
+.navbar-menu ul a{
     display: inline-block;
     text-decoration: none;
     text-transform: capitalize;
@@ -39,13 +39,13 @@ ul a{
     transition: 0.3s;
     padding: 3px 0;
 }
-ul a:hover{
+.navbar-menu ul a:hover{
     background-color: white;
     color: #c44fff;
     transform: translateY(-5px);
     box-shadow: 0 15px 15px rgba(0,0,0,0.05);
 }
-i.fas{
+/* i.fas{
     position: fixed;
     height: 50px;
     width: 50px;
@@ -60,7 +60,7 @@ i.fas{
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
     cursor: pointer;
-}
+} */
 .icon{
     cursor: pointer;
 }
@@ -96,38 +96,12 @@ i.fas{
 .open-menu .line2{
     transform: translate(-50%, -50%) rotate(45deg);
 }
-/* 
-@media screen and (min-width: 375px) and (max-width: 430px){
-    .icon span{
-        width: 30px;
-        margin: 15px;
-        right: -2vw;
-    }
-    .icon .line1{
-        width: 15px;
-        transform: translate(-30px, 15px);
-    }
-    .icon .line3{
-        width: 15px;
-        transform: translate(-15px, -15px);
-    } */
-    /* OPEN MENU */
-    /* .open-menu .line1{
-        transform: translate(-27px, 5px) rotate(-45deg);
-    }
-    .open-menu .line3{
-        transform: translate(-17px, -6px) rotate(-45deg);
-    }
-    .open-menu .line2{
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-} */
 @media screen and (min-width: 768px) and (max-width: 1920px){
     .icon{
         display: none;
     }
-    ul{
-        left: 50%;
+    nav .navbar-menu ul{
+        display: none;
     }
 }
 
