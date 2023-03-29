@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function navigation() {
     var navbar = document.getElementById("navbar");
     var icon = document.getElementById("icon");
@@ -36,25 +36,23 @@ function navigation() {
     cardWidth = sliderCards[0].offsetWidth + 30;
     sliderWrapper.style.transform = `translateX(${position}px)`;
   });
-=======
-
-var openNav = false;
-function navBtn()
-{
-  if(!openNav)
-  {
-    document.querySelector("#mobileNav").style.display = "block";
-    openNav = true;
-  }
-  else
-  {
-    document.querySelector("#mobileNav").style.display = "none";
-    openNav = false;
-  }
-}
 
 
+// var openNav = false;
+// function navBtn()
+// {
+//   if(!openNav)
+//   {
+//     document.querySelector("#mobileNav").style.display = "block";
+//     openNav = true;
+//   }
+//   else
+//   {
+//     document.querySelector("#mobileNav").style.display = "none";
+//     openNav = false;
+//   }
+// }
 
 
 
->>>>>>> f6f969d06fbaa5b8bc80410868dfe01114017160
+
