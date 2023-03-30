@@ -28,13 +28,20 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
+  const screenWidth = window.innerWidth;
+  const maxSliderWidth = sliderCards.length * cardWidth;
   currentIndex = Math.min(currentIndex + 1, sliderCards.length - 1);
   position = -currentIndex * cardWidth;
+  if (maxSliderWidth > screenWidth) {
+    position = Math.max(position, screenWidth - maxSliderWidth);
+  }
   sliderWrapper.style.transform = `translateX(${position}px)`;
   if (currentIndex === sliderCards.length - 1) {
     nextBtn.disabled = true; 
   }
   prevBtn.disabled = false; 
+
+  console.log(sliderCards.length)
 });
 
 window.addEventListener('resize', () => {
@@ -60,6 +67,8 @@ function checkLogoRowWidth() {
 
 window.addEventListener('load', checkLogoRowWidth);
 window.addEventListener('resize', checkLogoRowWidth);
+
+
 
 
 // var openNav = false;

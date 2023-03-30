@@ -592,7 +592,7 @@ section .text p {
     margin-bottom: 4rem;
 }
 .slider-container {
-    width: 100%;
+    width: auto;
     overflow: hidden;
     justify-content: center;
   }

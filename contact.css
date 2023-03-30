@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+header.about{
+    background: url(images/contact.png);
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+}
+.about h1{
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: -0.06em;
+    margin-top: 45vh;
+    margin-left: 1rem;
+}
+@media screen and (min-width:1024px) {
+    .about h1{
+        font-size: 80px; 
+    }
+    
+}
+header.about nav a{
+    color: #fff;
+}
+
+/* BODY */
+
+
+.letsTalk {
+    text-align: center;
+    margin: 15px;
+}
+
+form {
+    margin: 20px;
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+form select {
+    margin-bottom: 20px;
+}
+
+form label {
+    color: #2B7A78;
+}
+
+form input label select textarea {
+    display: flex;
+    flex-direction: column;
+}
